@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Марія Дружко Атмосфера слова</title>
+  <link rel="stylesheet" href="../css/style.css">   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">-->
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+</head>
+<body>
+  <!--прелоадер-->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+  <!--основной контент страницы-->
+    <div class="main">
+        <div class="title">
+            <div class="logo">
+                <img src="../img/ЛОГОТИП цвет с подложкой.png" alt="Логотип видавництва">
+            </div>
+            <div class="context">
+                <button class="onMainPage"><a href="../index.html">Видавництво</a></button>
+                <p class="druzhko">Дружко</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                  <li><a href="../knyharnya.html">Книгарня</a></li>
+                    <div id="additionalMenu">
+                      <li><a href="#">Видавництво</a></li>
+                      <div class="add close">
+                        <li><a href="../about.html">Про нас</a></li>
+                        <li><a href="../404.html">Видавничі послуги</a></li>
+                      </div>
+                    </div>                    
+                    <li><a href="../404.html">Події</a></li>
+                    <li><a href="../404.html">Новини</a></li>   
+                    <li><a href="../contacts.html">Контакти</a></li>                  
+                    <li><a href="../basket.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 10.75 10.75 0 24 0H96C107.5 0 117.4 8.19 119.6 19.51L121.1 32H312V134.1L288.1 111C279.6 101.7 264.4 101.7 255 111C245.7 120.4 245.7 135.6 255 144.1L319 208.1C328.4 218.3 343.6 218.3 352.1 208.1L416.1 144.1C426.3 135.6 426.3 120.4 416.1 111C407.6 101.7 392.4 101.7 383 111L360 134.1V32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24V24zM224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464zM416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464z"/></svg></a></li>
+                </ul>
+            </nav>
+        </div>  
+    </div>
+    
+    <div class="btnBook">
+      <input type="button" class="back" onclick="history.back();" value="&#8592; Назад до книгарні"/>  
+      <input type="button" class="toPrint" onclick="print_doc();" value="Роздрукувати"/>
+    </div>
+    
+    <div class="book">
+        <div class="selectBook">
+            <div class="photoBook" id="photoBook">
+                <img src="../img/Дружко - Атмосфера.jpg" alt="Марія Дружко Атмосфера слова">
+            </div>
+            <div class="generalAboutBook">
+                <div class="titleBook">
+                    Атмосфера слова
+                </div>      
+                <div class="authorBook">
+                    Марія Дружко
+                </div>
+                <div class="priceBook">
+                    100
+                </div>
+
+                <!--<input type="number" step="1" min="1" max="100" value="10">-->
+                <div id="mainCount">
+                    <div id="buttonCount">
+                        <span>Кількість:</span> <button class="btnCount" id="btn">1</button>
+                    </div>
+                    <div id="moreLess">
+                        <div>
+                            <button id="more">&#9650;</button>
+                        </div>
+                        <div>
+                            <button id="less">&#9660;</button>
+                        </div>           
+                    </div>
+                </div>   
+
+                <button type="button" class="toBasket" data-id="2">Додати до кошика</button>                   
+            </div>
+        </div>       
+
+        <div id="mainAboutBook">
+          <div class="publBook">
+              Атмосфера слова. Кам'янське. - ФОП Дружко, 2020. - 92 с.
+          </div>
+          <div class="descrBook">
+              «Атмосфера слова» — нова поетична збірка дніпровської письменниці Марії Дружко. У книзі представлені твори, написані впродовж 2013 — 2019 років — під час неординарних, іноді навіть трагічних подій у житті самої авторки та України в цілому. Тим-то, незважаючи на розмаїття тематики і форм, поезія «Атмосфери слова» загалом смакує з гірчинкою. Отож, у якості солодощів поетка пропонує читачеві витончену аудіоверсію деяких віршів і цикл невеличких відеоісторій, що їх можна переглянути, скориставшись к’юар кодами на сторінках цієї книжки.
+          </div>    
+        </div>    
+    </div>
+
+    
+
+    <div id="dialog" title="Вітаємо!">
+      <p>Обрана книга була додана до кошика.</p>
+    </div> 
+
+    <footer>
+      <h3>Свіжа українська література</h3>
+      <div class="bottom">
+        <div class="firstBottom">
+          <h4>Видавництво Дружко</h4>
+          <p class="cont">
+            +38(097)46-79-607<br>
+            +38(093)73-10-871<br>
+            fop.druzhko20@gmail.com
+          </p>
+        </div>
+
+        <div class="secondBottom">      
+          <ul class="inside">
+            <li><a href="../knyharnya.html">Книгарня</a></li>
+            <li><a href="#">Відповіді на часті питання</a></li>
+            <li><a href="#">Способи оплати</a></li>
+          </ul>
+        </div>
+
+        <div class="firstBottom">
+          <h4>Ми у соціальних мережах</h4>
+            <ul class="inside">
+              <li><a href="https://www.facebook.com/vivartdndz">Facebook</a></li>
+              <li><a href="https://www.instagram.com/wix/">Instagram</a></li>
+              <li><a href="https://www.youtube.com/channel/UCzxDCHS7-LwEy8fhRVfVgnQ">YouTube</a></li>
+            </ul>
+        </div>
+      </div>
+      <p class="rules">
+        &#169; 2022-2023 Дружко. Всі права захищені. 
+      </p>
+    </footer>         
+
+    <script src="../js/script.js"></script>   
+    <script src="../js/scriptIndBook.js"></script>    
+</body>
+</html>

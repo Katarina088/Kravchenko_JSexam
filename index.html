@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Видавництво Дружко</title>
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="https://kit.fontawesome.com/e55f18dd94.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!--прелоадер-->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+    <!--основной контент страницы-->
+    <div class="main">
+        <div class="title">
+            <div class="logo">
+                <img src="img/ЛОГОТИП цвет с подложкой.png" alt="Логотип видавництва">
+            </div>
+            <div class="context">
+                <button class="onMainPage"><a href="index.html">Видавництво</a></button>
+                <p class="druzhko">Дружко</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                  <li><a href="knyharnya.html">Книгарня</a></li>
+                    <div id="additionalMenu">
+                      <li><a href="#">Видавництво</a></li>                      
+                      <div class="add close">
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="404.html">Видавничі послуги</a></li>
+                      </div>
+                    </div>                    
+                    <li><a href="404.html">Події</a></li>
+                    <li><a href="404.html">Новини</a></li>   
+                    <li><a href="contacts.html">Контакти</a></li>                  
+                    <li><a href="basket.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 10.75 10.75 0 24 0H96C107.5 0 117.4 8.19 119.6 19.51L121.1 32H312V134.1L288.1 111C279.6 101.7 264.4 101.7 255 111C245.7 120.4 245.7 135.6 255 144.1L319 208.1C328.4 218.3 343.6 218.3 352.1 208.1L416.1 144.1C426.3 135.6 426.3 120.4 416.1 111C407.6 101.7 392.4 101.7 383 111L360 134.1V32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24V24zM224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464zM416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464z"/></svg></a></li>
+                </ul>
+            </nav>
+        </div>  
+    </div>
+
+    <div class="splashScreen">
+      <div class="slider">
+        <div class="item">
+           <img src="img/slide1.jpg" alt="Свіжа українська література">
+           <div class="slideText"></div>
+        </div>
+    
+        <div class="item">
+          <img src="img/slide2.png" alt="Свіжа українська література">
+          <div class="slideText"></div>
+        </div>
+    
+        <div class="item">
+          <img src="img/slide3.jpg" alt="Свіжа українська література">
+          <div class="slideText"></div>
+        </div>
+    
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+    
+      <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+
+    <div class="storyAndImg">
+      <div class="shortStory">
+        <h2>Вітаємо вас на сторінках нашого видавництва</h2>
+        <p class="descr">      
+          Друзі, вас вітає команда видавництва "Дружко"! Ми раді запропонувати високоякісну українську документальну і художню літературу. Окрім друкованої продукції, видавництво "Дружко" випускає книги і в електронному вигляді. Ми беремо участь у всіх великих книжкових заходах, благодійних акціях для дітей із особливими потребами та ін. Ми раді подбати про ваше здоров'я та чистоту навколишнього середовища, тому у виробництві книжкової продукції використовуються сучасні екологічно чисті технології. Видавництво «Дружко» - це величезний простір для розумних та талановитих людей, одним словом, для всіх вас! Тому об'єднуємось, друзі!
+        </p>
+        <p class="descr">      
+          Друзі, вас вітає команда видавництва "Дружко"! Ми раді запропонувати високоякісну українську документальну і художню літературу. Окрім друкованої продукції, видавництво "Дружко" випускає книги і в електронному вигляді. Ми беремо участь у всіх великих книжкових заходах, благодійних акціях для дітей із особливими потребами та ін. Ми раді подбати про ваше здоров'я та чистоту навколишнього середовища, тому у виробництві книжкової продукції використовуються сучасні екологічно чисті технології. Видавництво «Дружко» - це величезний простір для розумних та талановитих людей, одним словом, для всіх вас! Тому об'єднуємось, друзі!
+        </p>
+        <button name="submit" class="submit" id="letQuote">Отримати цитату</button>
+      </div>  
+    
+      <div class="wordCloud">
+        <img src="img/cloud.png" alt="Хмара слів видавництва Дружко">
+      </div>
+    </div>    
+         
+    <div id="quotes" style="display: none;">
+      <p id="textQuote"></p>
+      <p id="author"></p>
+    </div>
+
+    <footer>
+      <h3>Свіжа українська література</h3>
+      <div class="bottom">
+        <div class="firstBottom">
+          <h4>Видавництво Дружко</h4>
+          <p class="cont">
+            +38(097)46-79-607<br>
+            +38(093)73-10-871<br>
+            fop.druzhko20@gmail.com
+          </p>
+        </div>
+
+        <div class="secondBottom">      
+          <ul class="inside">
+            <li><a href="knyharnya.html">Книгарня</a></li>
+            <li><a href="#">Відповіді на часті питання</a></li>
+            <li><a href="#">Способи оплати</a></li>
+          </ul>
+        </div>
+
+        <div class="firstBottom">
+          <h4>Ми у соціальних мережах</h4>
+            <ul class="inside">
+              <li><a href="https://www.facebook.com/vivartdndz">Facebook</a></li>
+              <li><a href="https://www.instagram.com/wix/">Instagram</a></li>
+              <li><a href="https://www.youtube.com/channel/UCzxDCHS7-LwEy8fhRVfVgnQ">YouTube</a></li>
+            </ul>
+        </div>
+      </div>
+      <p class="rules">
+        &#169; 2022-2023 Дружко. Всі права захищені. 
+      </p>
+    </footer>         
+
+    <script src="js/script.js"></script>
+    <script src="js/scriptSlaydAPI.js"></script>    
+</body>
+</html>
